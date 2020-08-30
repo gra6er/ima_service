@@ -79,3 +79,6 @@ INSTALLATION:
     ./dbus_deamon
     ./ima_client
   
+  BUG:
+  Syslog message:
+     /usr/bin/dbus-launch terminated abnormally without any error message
