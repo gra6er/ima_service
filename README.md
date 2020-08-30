@@ -76,9 +76,14 @@ INSTALLATION:
   RUNNING:
   
     ./ima_server
-    ./dbus_deamon
+    ./dbus_deamon (sudo ./dbus_deamon)
     ./ima_client
   
   BUG:
+  If you try to 
+  
+    sudo ./dbus_deamon
+  
   Syslog message:
+  
      /usr/bin/dbus-launch terminated abnormally without any error message
