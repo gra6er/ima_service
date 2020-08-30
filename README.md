@@ -36,23 +36,39 @@ INSTALLATION:
               -outform DER -out x509_evm.der -keyout privkey_evm.pem
 
   Configuration file x509_evm.genkey:
+  
   [ req ]
+  
   default_bits = 1024
+  
   distinguished_name = req_distinguished_name
+  
   prompt = no
+  
   string_mask = utf8only
+  
   x509_extensions = myexts
+  
 
   [ req_distinguished_name ]
+  
   O = Magrathea
+  
   CN = Glacier signing key
+  
   emailAddress = slartibartfast@magrathea.h2g2
+  
 
   [ myexts ]
+  
   basicConstraints=critical,CA:FALSE
+  
   keyUsage=digitalSignature
+  
   subjectKeyIdentifier=hash
+  
   authorityKeyIdentifier=keyid
+  
 
   Generate public key for using RSA key format:
 
@@ -74,5 +90,8 @@ INSTALLATION:
   RUNNING:
   
   ./ima_server
+  
   ./dbus_deamon
+  
   ./ima_client
+  
