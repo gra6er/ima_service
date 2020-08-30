@@ -33,6 +33,8 @@ int audit_search_file(char* filename, int* str_num);
 
 void str_trim(char* str, int length);
 
+int init_audit(void);
+
 int verify_file(char* filename);
 
 #endif
