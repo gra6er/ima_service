@@ -75,10 +75,11 @@ INSTALLATION:
   openssl rsa -pubout -in privkey_evm.pem -out pubkey_evm.pem
 
   Copy keys to /etc/keys:
-
+  
      cp pubkey_evm.pem /etc/keys
      scp pubkey_evm.pem target:/etc/keys
   or
+  
      cp x509_evm.pem /etc/keys
      scp x509_evm.pem target:/etc/keys
      
