@@ -36,8 +36,6 @@ INSTALLATION:
               -outform DER -out x509_evm.der -keyout privkey_evm.pem
 
   Configuration file x509_evm.genkey:
-
-  # Begining of the file
   [ req ]
   default_bits = 1024
   distinguished_name = req_distinguished_name
@@ -55,7 +53,6 @@ INSTALLATION:
   keyUsage=digitalSignature
   subjectKeyIdentifier=hash
   authorityKeyIdentifier=keyid
-  # EOF
 
   Generate public key for using RSA key format:
 
