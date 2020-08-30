@@ -19,8 +19,6 @@ int main()
 {
 	pid_t pid;
 
-	//chdir("/");
-
 	pid = fork();
 
 	switch(pid)
