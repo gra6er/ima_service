@@ -140,6 +140,7 @@ void respond_to_status(DBusConnection *connection, DBusMessage *request)
                  DBUS_TYPE_INVALID);
     dbus_connection_send(connection, reply, NULL);
     dbus_message_unref(reply);
+    bzero(ima_resp, sizeof(ima_resp));
 }
 
 void respond_to_addFile(DBusConnection *connection, DBusMessage *request)
@@ -193,6 +194,7 @@ void respond_to_addFile(DBusConnection *connection, DBusMessage *request)
                  DBUS_TYPE_INVALID);
     dbus_connection_send(connection, reply, NULL);
     dbus_message_unref(reply);
+    bzero(ima_resp, sizeof(ima_resp));
 }
 
 void respond_to_rmFile(DBusConnection *connection, DBusMessage *request)
@@ -222,6 +224,7 @@ void respond_to_rmFile(DBusConnection *connection, DBusMessage *request)
                  DBUS_TYPE_INVALID);
     dbus_connection_send(connection, reply, NULL);
     dbus_message_unref(reply);
+    bzero(ima_resp, sizeof(ima_resp));
 }
 
 int audit_add_file(char* filename)
