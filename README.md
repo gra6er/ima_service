@@ -6,7 +6,7 @@ IMA_SERVICE INCLUDES 3 PARTS:
   2) ima_client
       Receives commands from the server and redirects them to the dbus_deamon.
   3) dbus_deamon
-      API for DBus, provides 3 functions: status, addFile, rmFile.
+      API for DBus, provides 3 functions: status, addFile, rmFile (not available now).
 
 INSTALLATION:
 
